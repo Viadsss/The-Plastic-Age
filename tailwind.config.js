@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        libreBodoni: ["Libre Bodoni", "serif"],
+        openSans: ["Open Sans", "sans-serif"],
+        madimiOne: ["Madimi One", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
