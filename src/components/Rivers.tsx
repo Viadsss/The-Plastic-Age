@@ -32,7 +32,7 @@ const Rivers = () => {
             <div className="font-openSans font-bold md:text-xl lg:text-2xl">
               Klang
             </div>
-            <div className="animate-flicker text-xs md:text-sm md:uppercase md:tracking-widest">
+            <div className="text-xs md:text-sm md:uppercase md:tracking-widest">
               Malaysia
             </div>
             <div className="my-2 w-1/4 border-b"></div>
@@ -42,7 +42,7 @@ const Rivers = () => {
             <div className="font-openSans font-bold md:text-xl lg:text-2xl">
               Ulhas
             </div>
-            <div className="animate-flicker text-xs md:text-sm md:uppercase md:tracking-widest">
+            <div className="text-xs md:text-sm md:uppercase md:tracking-widest">
               India
             </div>
             <div className="my-2 w-1/4 border-b"></div>
@@ -92,7 +92,7 @@ const Rivers = () => {
             <div className="font-openSans font-bold md:text-xl lg:text-2xl">
               Ganges
             </div>
-            <div className="animate-flicker text-xs md:text-sm md:uppercase md:tracking-widest">
+            <div className="text-xs md:text-sm md:uppercase md:tracking-widest">
               India
             </div>
             <div className="my-2 w-1/4 border-b"></div>
