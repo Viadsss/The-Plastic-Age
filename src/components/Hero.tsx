@@ -42,8 +42,9 @@ const Hero: React.FC<Props> = ({ language, setLanguage }) => {
             The Plastic Age
           </h1>
           <p className="text-center font-openSans tracking-wide md:text-xl">
-            signifies the period defined by the extensive use and environmental
-            consequences of plastics in human history
+            {language === "English"
+              ? "signifies the period defined by the extensive use and environmental consequences of plastics in human history"
+              : "tumutukoy sa yugto na kung saan malawak ang paggamit ng plastik at ang mga epekto nito sa kapaligiran sa kasaysayan ng tao"}
           </p>
 
           <div className="absolute bottom-6 text-xs md:bottom-12 md:text-base">
@@ -51,7 +52,7 @@ const Hero: React.FC<Props> = ({ language, setLanguage }) => {
               href="#plastic"
               className="flex flex-col items-center font-inter text-gray-300"
             >
-              <div>Read More</div>
+              <div>{language === "English" ? "Read More" : "Magbasa Pa"}</div>
               <IconChevronsDown className="w-3 animate-bounce md:w-6" />
             </a>
           </div>
