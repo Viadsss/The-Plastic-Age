@@ -1,21 +1,31 @@
-const Rivers = () => {
+interface Props {
+  language: string;
+}
+
+const Rivers: React.FC<Props> = ({ language }) => {
   return (
     <div className="flex min-h-screen w-full justify-center bg-black py-4 text-center text-white md:h-screen">
       <div className="relative flex w-full max-w-screen-2xl flex-col items-center justify-center px-4 py-14 md:py-0">
         <div className="mb-2 font-inter text-3xl font-bold uppercase md:mb-4 lg:text-7xl">
-          7 out of the top 10 rivers
+          {language === "English"
+            ? "7 out of the top 10 rivers"
+            : "7 sa 10 nangungunang ilog"}
         </div>
         <div className="mb-2 font-openSans uppercase tracking-widest md:mb-4 lg:text-2xl">
-          contributing to ocean plastic pollution are in the{" "}
+          {language === "English"
+            ? "contributing to ocean plastic pollution are in the"
+            : "na nag-aambag sa polusyon ng plastik sa karagatan ay nasa"}{" "}
           <span className="bg-gradient-to-r from-red-500 to-yellow-400 bg-clip-text text-transparent">
-            Philip
+            {language === "English" ? "Philip" : "Pilip"}
           </span>
           <span className="bg-gradient-to-r from-sky-500 to-zinc-300 bg-clip-text text-transparent">
-            pines
+            {language === "English" ? "pines" : "inas"}
           </span>
         </div>
         <div className="mb-10 font-openSans text-xs uppercase tracking-widest opacity-70 md:mb-20 md:text-sm">
-          from 1656 rivers around the globe as top pollutants in the oceans
+          {language === "English"
+            ? "from 1656 rivers around the globe as top pollutants in the oceans"
+            : "Mula sa 1656 na mga ilog sa buong mundo bilang nangungunang nagdudulot ng polusyon sa mga karagatan"}
         </div>
         <div className="grid w-full grid-cols-2 items-start gap-y-8 md:grid-cols-5 md:gap-y-14">
           <div className="flex flex-col items-center justify-center">

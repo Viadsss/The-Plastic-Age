@@ -15,16 +15,18 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-200">
       <Hero setLanguage={setLanguage} language={language} />
-      <Plastic />
-      <Quantity />
-      <SingleUse />
-      <Countries />
-      <Fish />
-      <Rivers />
-      <Bangus />
-      <WeCanDo />
+      <Plastic language={language} />
+      <Quantity language={language} />
+      <SingleUse language={language} />
+      <Countries language={language} />
+      <Fish language={language} />
+      <Rivers language={language} />
+      <Bangus language={language} />
+      <WeCanDo language={language} />
     </div>
   );
 }
 
 export default App;
+
+

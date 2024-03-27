@@ -1,12 +1,18 @@
-const Countries = () => {
+interface Props {
+  language: string;
+}
+
+const Countries: React.FC<Props> = ({ language }) => {
   return (
     <div className="flex h-screen w-full justify-center bg-black py-6 text-center text-white">
       <div className="relative flex w-full max-w-screen-2xl flex-col items-center justify-center px-4">
         <div className="mb-4 font-inter text-5xl font-bold uppercase md:text-7xl">
-          Top 5 Countries
+          {language === "English" ? "Top 5 Countries" : "Top 5 na Bansa"}
         </div>
         <div className="mb-10 font-openSans text-xl uppercase tracking-widest md:mb-20 md:text-2xl">
-          Emitting the Highest Share of Global Plastic Waste to the Ocean
+          {language === "English"
+            ? "Emitting the Highest Share of Global Plastic Waste to the Ocean"
+            : "Na Pinakamalaking Kontribyutor ng Plastik na Basura sa Karagatan"}
         </div>
 
         <div className="grid w-full gap-4 text-center md:grid-cols-5">

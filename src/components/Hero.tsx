@@ -22,13 +22,13 @@ const Hero: React.FC<Props> = ({ language, setLanguage }) => {
       <div className="absolute z-50 flex w-full justify-center bg-gradient-to-b from-black/50 to-transparent md:fixed">
         <div className="flex w-full max-w-screen-2xl justify-end gap-x-4 px-8 py-4 font-lora text-sm font-semibold text-white md:text-base lg:px-16">
           <button
-            className="decoration-2 hover:underline"
+            className={`decoration-2 hover:underline ${language === "English" ? "underline" : ""}`}
             onClick={() => setLanguage("English")}
           >
             english
           </button>
           <button
-            className="decoration-2 hover:underline"
+            className={`decoration-2 hover:underline ${language === "Tagalog" ? "underline" : ""}`}
             onClick={() => setLanguage("Tagalog")}
           >
             tagalog

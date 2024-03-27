@@ -1,18 +1,24 @@
 import CokeBottle from "./CokeBottle";
 
-const SingleUse = () => {
+interface Props {
+  language: string;
+}
+
+const SingleUse: React.FC<Props> = ({ language }) => {
   return (
     <div className="flex h-screen w-full justify-center bg-white py-6 text-center">
       <div className="relative w-full max-w-screen-2xl px-4">
         <div className="relative flex h-full w-full justify-between">
           <div className="z-[5] flex flex-col items-center justify-center text-center md:basis-1/2 md:px-5">
             <h1 className="mb-10 bg-white/50 font-inter text-4xl font-bold uppercase md:text-6xl">
-              50% of Global Plastic Production is Single-Use
+              {language === "English"
+                ? "50% of Global Plastic Production is Single-Use"
+                : "50% ng Produksyon ng Plastik sa Buong Mundo ay pang-isang gamitan lang"}
             </h1>
             <p className="bg-white/50 p-2 font-openSans md:text-lg">
-              Every year, 380 million tons of plastic are produced globally,
-              with 50% used for single-use purposes, often lasting just minutes
-              before being discarded.
+              {language === "English"
+                ? "Every year, 380 million tons of plastic are produced globally, with 50% used for single-use purposes, often lasting just minutes before being discarded."
+                : "Taon-taon, 380 milyong toneladang plastik ang ginagawa sa buong mundo, at 50% nito ay ginagamit para sa pang-isang gamitan lang, na madalas ay tumatagal lamang ng ilang minuto bago itapon."}
             </p>
           </div>
           <div className="absolute flex h-full md:static md:basis-1/2">
