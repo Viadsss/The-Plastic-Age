@@ -4,9 +4,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        libreBodoni: ["Libre Bodoni", "serif"],
+        lora: ["Lora", "serif"],
+        inter: ["Inter", "sans-serif"],
         openSans: ["Open Sans", "sans-serif"],
-        madimiOne: ["Madimi One", "sans-serif"],
+      },
+      keyframes: {
+        flicker: {
+          "0%, 100%": {},
+          "50%": { color: "rgb(251 113 133)" },
+        },
+      },
+      animation: {
+        flicker: "flicker 3s ease infinite",
       },
     },
   },
