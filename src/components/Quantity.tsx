@@ -14,7 +14,7 @@ const Quantity: React.FC<Props> = ({ language }) => {
         <div className="mb-12 text-balance font-inter text-4xl font-bold uppercase md:mb-20 md:text-7xl">
           {language === "English"
             ? "8,300,000,000 metric tons"
-            : "8,300,000,00 tonelada"}
+            : "8,300,000,000 tonelada"}
         </div>
         <div className="flex w-full flex-col justify-around gap-x-6 gap-y-12 text-center md:flex-row">
           <div>
